@@ -56,8 +56,8 @@ UICorner.Parent = MainButton
 local UIStroke = Instance.new("UIStroke")
 UIStroke.Parent = MainButton
 UIStroke.Color = Color3.fromRGB(150, 150, 150) -- Parlak beyaz yerine gri
-UIStroke.Thickness = 1.6 -- İncelttik
-UIStroke.Transparency = 0.6 -- Biraz daha şeffaf
+UIStroke.Thickness = 1.5 -- İncelttik
+UIStroke.Transparency = 0 -- Biraz daha şeffaf
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
 -- Gölge (Glow) - Ciddi oranda azaltıldı
@@ -66,7 +66,7 @@ Shadow.Parent = MainButton
 Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
 Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
 Shadow.Size = UDim2.new(1.2, 0, 1.2, 0) -- Boyutu küçüldü
-Shadow.BackgroundTransparency = 0.8
+Shadow.BackgroundTransparency = 1.5
 Shadow.Image = "rbxassetid://1316045217"
 Shadow.ImageColor3 = Color3.fromRGB(255, 255, 255)
 Shadow.ImageTransparency = 1 -- ÇOK HAFİF bir parlama (Eskisi 0.5 idi)
