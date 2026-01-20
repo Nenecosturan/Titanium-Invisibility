@@ -19,7 +19,7 @@ local Camera = Workspace.CurrentCamera
 -- // AYARLAR \\ --
 local VOID_POSITION = Vector3.new(0, 10000, 0) -- Gerçek bedenin saklanacağı güvenli yükseklik
 local GHOST_COLOR = Color3.fromRGB(100, 255, 255) -- Hayalet rengi (Buz Mavisi)
-local GHOST_TRANSPARENCY = 0.6
+local GHOST_TRANSPARENCY = 0.4
 
 -- // 1. TEMİZLİK \\ --
 local guiName = "TitaniumGhost_v5"
@@ -44,7 +44,7 @@ MainButton.AnchorPoint = Vector2.new(0.5, 0.5)
 MainButton.Position = UDim2.new(0.5, 0, 0.35, 0)
 MainButton.Size = UDim2.new(0, 0, 0, 0)
 MainButton.BackgroundColor3 = Color3.fromRGB(11, 18, 21) -- Daha koyu gri zemin
-MainButton.BackgroundTransparency = 0.2
+MainButton.BackgroundTransparency = 0
 MainButton.Text = ""
 MainButton.AutoButtonColor = false
 
@@ -57,7 +57,7 @@ local UIStroke = Instance.new("UIStroke")
 UIStroke.Parent = MainButton
 UIStroke.Color = Color3.fromRGB(150, 150, 150) -- Parlak beyaz yerine gri
 UIStroke.Thickness = 1.6 -- İncelttik
-UIStroke.Transparency = 0.3 -- Biraz daha şeffaf
+UIStroke.Transparency = 0.6 -- Biraz daha şeffaf
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
 -- Gölge (Glow) - Ciddi oranda azaltıldı
@@ -66,10 +66,10 @@ Shadow.Parent = MainButton
 Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
 Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
 Shadow.Size = UDim2.new(1.2, 0, 1.2, 0) -- Boyutu küçüldü
-Shadow.BackgroundTransparency = 1
+Shadow.BackgroundTransparency = 0.8
 Shadow.Image = "rbxassetid://1316045217"
 Shadow.ImageColor3 = Color3.fromRGB(255, 255, 255)
-Shadow.ImageTransparency = 0.9 -- ÇOK HAFİF bir parlama (Eskisi 0.5 idi)
+Shadow.ImageTransparency = 1 -- ÇOK HAFİF bir parlama (Eskisi 0.5 idi)
 Shadow.ZIndex = -1
 
 local Label = Instance.new("TextLabel")
